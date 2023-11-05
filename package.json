@@ -1,0 +1,28 @@
+{
+  "name": "write-pretty-file",
+  "version": "0.0.0",
+  "description": "Write file and automatically format it with your projects prettier config",
+  "keywords": [],
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "prettier": "prettier-config-one",
+  "devDependencies": {
+    "prettier": "3.0.3",
+    "prettier-config-one": "0.2.0",
+    "tsconfig-one": "0.0.8",
+    "typescript": "5.2.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
