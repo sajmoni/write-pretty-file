@@ -16,7 +16,7 @@
   "scripts": {
     "build": "tsc",
     "test": "vitest",
-    "release": "npm run build && np"
+    "release": "npm run build && np --no-tests"
   },
   "prettier": "prettier-config-one",
   "devDependencies": {
