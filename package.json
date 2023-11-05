@@ -1,6 +1,6 @@
 {
   "name": "write-pretty-file",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Write file and automatically format it with your projects prettier config",
   "keywords": [
     "write-file",
