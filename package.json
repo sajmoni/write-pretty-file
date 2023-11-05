@@ -13,11 +13,13 @@
   ],
   "scripts": {
     "build": "tsc",
-    "test": "vitest"
+    "test": "vitest",
+    "release": "np"
   },
   "prettier": "prettier-config-one",
   "devDependencies": {
     "@types/node": "20.8.10",
+    "np": "8.0.4",
     "prettier-config-one": "0.2.0",
     "tempy": "3.1.0",
     "tsconfig-one": "0.0.8",
