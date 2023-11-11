@@ -7,14 +7,16 @@ Write file and automatically format it with your projects prettier config
 - Formats with prettier (using your projects config)
 - Creates parent directories if needed
 - If a prettier config is not found, uses prettier defaults instead
+- Automatically stringifies objects
 
 ## Usage
 
 ```ts
-import write from 'write-pretty-file'
+import writePrettyFile from 'write-pretty-file'
 
-await write('hello/world.json', '{ hello: world }')
-await write('hello/world.ts', 'export default function (){}')
+await writePrettyFile('hello/world.json', '{ hello: world }')
+await writePrettyFile('hello/world.json', { hello: 'world' })
+await writePrettyFile('hello/world.ts', 'export default function (){}')
 ```
 
 ## 📦 Install

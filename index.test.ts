@@ -38,6 +38,22 @@ test('Format JSON', async () => {
   expect(formattedFile).toEqual('{ "hello": "world" }\n')
 })
 
+test('Objects are JSON stringified automatically', async () => {
+  const directory = temporaryDirectory()
+
+  const prettierConfig = { semi: false, singleQuote: true }
+  await fs.writeFile(
+    path.join(directory, '.prettierrc'),
+    JSON.stringify(prettierConfig),
+  )
+
+  const unFormatted = { hello: 'world' }
+  const filePath = path.join(directory, 'directory/index.json')
+  await writePrettyFile(filePath, unFormatted)
+  const formattedFile = await fs.readFile(filePath, 'utf-8')
+  expect(formattedFile).toEqual('{ "hello": "world" }\n')
+})
+
 test('Uses prettier defaults if no config', async () => {
   const directory = temporaryDirectory()
 
