@@ -26,16 +26,17 @@
   "devDependencies": {
     "@types/node": "20.11.5",
     "np": "9.2.0",
+    "prettier": "3.2.4",
     "prettier-config-one": "0.2.0",
     "tempy": "3.1.0",
     "tsconfig-one": "0.0.8",
     "typescript": "5.3.3",
     "vitest": "1.2.0"
   },
+  "peerDependencies": {
+    "prettier": "3.x"
+  },
   "engines": {
     "node": ">=20"
-  },
-  "dependencies": {
-    "prettier": "3.2.4"
   }
 }
